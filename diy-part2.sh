@@ -18,26 +18,17 @@ svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-openclash pack
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-eqos package/luci-app-eqos
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-adguardhome package/luci-app-adguardhome
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-atmaterial package/luci-theme-atmaterial
-# svn co https://github.com/jerrykuku/node-request/trunk package/node-request
-# svn co https://github.com/jerrykuku/luci-app-jd-dailybonus/trunk package/luci-app-jd-dailybonus
 svn co https://github.com/destan19/OpenAppFilter/trunk package/OpenAppFilter
 svn co https://github.com/tty228/luci-app-serverchan/trunk package/luci-app-serverchan
 svn co https://github.com/pymumu/luci-app-smartdns/branches/lede package/luci-app-smartdns
 svn co https://github.com/garypang13/luci-theme-edge/branches/18.06 package/luci-theme-edge
 
-# 更新京东签到脚本
-# rm -rf package/luci-app-jd-dailybonus/root/usr/share/jd-dailybonus/JD_DailyBonus.js
-# curl -L https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js -o package/luci-app-jd-dailybonus/root/usr/share/jd-dailybonus/JD_DailyBonus.js
-
 # 替换更新默认 argon 主题
 rm -rf package/lean/luci-theme-argon && svn co https://github.com/jerrykuku/luci-theme-argon/branches/18.06 package/luci-theme-argon
 
 # 替换更新 passwall 和 ssrplus+
-rm -rf package/openwrt-packages/luci-app-passwall && svn co https://github.com/Lienol/openwrt-package/trunk/lienol/luci-app-passwall package/openwrt-packages/luci-app-passwall
+rm -rf package/openwrt-packages/luci-app-passwall && svn co https://github.com/xiaorouji/openwrt-passwall/branches/main package/openwrt-passwall
 rm -rf package/openwrt-packages/luci-app-ssr-plus && svn co https://github.com/fw876/helloworld package/openwrt-packages/helloworld
-
-# 添加 passwall 依赖库
-svn co https://github.com/Lienol/openwrt-package/trunk/package package/small
 
 # 替换更新 haproxy 默认版本
 rm -rf feeds/packages/net/haproxy && svn co https://github.com/Lienol/openwrt-packages/trunk/net/haproxy feeds/packages/net/haproxy
