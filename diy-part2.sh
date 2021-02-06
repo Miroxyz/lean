@@ -28,7 +28,9 @@ rm -rf package/lean/luci-theme-argon && svn co https://github.com/jerrykuku/luci
 
 # 替换更新 passwall 和 ssrplus+
 rm -rf package/openwrt-packages/luci-app-passwall && svn co https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
+rm -rf package/openwrt-passwall/v2ray
 rm -rf package/openwrt-packages/luci-app-ssr-plus && svn co https://github.com/fw876/helloworld package/openwrt-packages/helloworld
+rm -rf /package/lean/v2ray
 
 # 替换更新 haproxy 默认版本
 rm -rf feeds/packages/net/haproxy && svn co https://github.com/Lienol/openwrt-packages/trunk/net/haproxy feeds/packages/net/haproxy
