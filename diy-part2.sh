@@ -24,11 +24,13 @@ svn co https://github.com/tty228/luci-app-serverchan/trunk package/luci-app-serv
 svn co https://github.com/garypang13/luci-theme-edge/branches/18.06 package/luci-theme-edge
 
 # 替换更新默认 argon 主题
-rm -rf package/lean/luci-theme-argon && svn co https://github.com/jerrykuku/luci-theme-argon/branches/18.06 package/luci-theme-argon
+rm -rf package/lean/luci-theme-argon && svn co https://github.com/jerrykuku/luci-theme-argon/branches/18.06 package/jerrykuku/luci-theme-argon
 
-# 替换更新 passwall 和 ssrplus+
-rm -rf package/openwrt-passwall && svn co https://github.com/xiaorouji/openwrt-passwall/trunk package/openwrt-passwall
-rm -rf package/openwrt-packages/helloworld && svn co https://github.com/fw876/helloworld/trunk package/openwrt-packages/helloworld
+# passwall ssrplus+ vssr
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk package/openwrt-passwall
+svn co https://github.com/fw876/helloworld/trunk package/lean/helloworld
+svn co https://github.com/jerrykuku/lua-maxminddb/trunk package/jerrykuku/lua-maxminddb
+svn co https://github.com/jerrykuku/luci-app-vssr/trunk package/jerrykuku/luci-app-vssr
 
 # 替换更新 haproxy 默认版本
 rm -rf feeds/packages/net/haproxy && svn co https://github.com/Lienol/openwrt-packages/trunk/net/haproxy feeds/packages/net/haproxy
