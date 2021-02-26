@@ -38,6 +38,3 @@ rm -rf feeds/packages/net/haproxy && svn co https://github.com/Lienol/openwrt-pa
 # 自定义定制选项
 sed -i 's#192.168.1.1#10.10.10.1#g' package/base-files/files/bin/config_generate # 定制默认 IP
 sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings # 取消系统默认密码
-sed -i 's@background-color: #e5effd@background-color: #f8fbfe@g' package/luci-theme-edge/htdocs/luci-static/edge/cascade.css # luci-theme-edge 主题颜色微调
-sed -i 's#rgba(223, 56, 18, 0.04)#rgba(223, 56, 18, 0.02)#g' package/luci-theme-edge/htdocs/luci-static/edge/cascade.css # luci-theme-edge 主题颜色微调
-# sed -i 's#raw.githubusercontent.com/NobyDa/Script/master#cdn.jsdelivr.net/gh/NobyDa/Script#g' package/luci-app-jd-dailybonus/root/luasrc/model/cbi/jd-dailybonus/client.lua # luci-app-jd-dailybonus 替换为 cdn 地址
