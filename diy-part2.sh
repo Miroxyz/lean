@@ -21,7 +21,7 @@ svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-atmaterial p
 svn co https://github.com/destan19/OpenAppFilter/trunk package/destan19/OpenAppFilter
 svn co https://github.com/tty228/luci-app-serverchan/trunk package/tty228/luci-app-serverchan
 # svn co https://github.com/pymumu/luci-app-smartdns/branches/lede package/luci-app-smartdns
-svn co https://github.com/garypang13/luci-theme-edge/branches/18.06 package/garypang13/luci-theme-edge
+# svn co https://github.com/garypang13/luci-theme-edge/branches/18.06 package/garypang13/luci-theme-edge
 
 # 替换更新默认 argon 主题
 rm -rf package/lean/luci-theme-argon && svn co https://github.com/jerrykuku/luci-theme-argon/branches/18.06 package/jerrykuku/luci-theme-argon
