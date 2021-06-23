@@ -4,7 +4,7 @@
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-openclash package/kenzok8/luci-app-openclash
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-eqos package/kenzok8/luci-app-eqos
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-atmaterial package/kenzok8/luci-theme-atmaterial
-svn co https://github.com/destan19/OpenAppFilter/trunk package/destan19/OpenAppFilter
+# svn co https://github.com/destan19/OpenAppFilter/trunk package/destan19/OpenAppFilter
 svn co https://github.com/tty228/luci-app-serverchan/trunk package/tty228/luci-app-serverchan
 
 # 替换更新默认 argon 主题
